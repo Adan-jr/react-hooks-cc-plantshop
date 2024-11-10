@@ -1,12 +1,20 @@
-import React from "react";
-import Header from "./Header";
+import React, { useState, useEffect } from "react";
 import PlantPage from "./PlantPage";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setIsLoading(false), 1000);
+  }, []);
+
   return (
     <div className="app">
-      <Header />
-      <PlantPage />
+      {isLoading ? (
+        <h2>Loading...</h2>
+      ) : (
+        <PlantPage />
+      )}
     </div>
   );
 }

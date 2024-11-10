@@ -41,6 +41,72 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "trivela ",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Flegionville.org%2F%3Fm%3Dbeginners-guide-to-indoor-plants-oo-pM4rOglY&psig=AOvVaw0N5ne4rW18LupXruqT1FTD&ust=1731331200408000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJj4xLzt0YkDFQAAAAAdAAAAABAE",
+      "price": 0.1,
+      "id": 8
+    },
+    {
+      "name": "trivela ",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Flegionville.org%2F%3Fm%3Dbeginners-guide-to-indoor-plants-oo-pM4rOglY&psig=AOvVaw0N5ne4rW18LupXruqT1FTD&ust=1731331200408000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJj4xLzt0YkDFQAAAAAdAAAAABAE",
+      "price": 0.1,
+      "id": 9
+    },
+    {
+      "name": "trivela ",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Flegionville.org%2F%3Fm%3Dbeginners-guide-to-indoor-plants-oo-pM4rOglY&psig=AOvVaw0N5ne4rW18LupXruqT1FTD&ust=1731331200408000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJj4xLzt0YkDFQAAAAAdAAAAABAE",
+      "price": 0.1,
+      "id": 10
+    },
+    {
+      "name": "trivela ",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Flegionville.org%2F%3Fm%3Dbeginners-guide-to-indoor-plants-oo-pM4rOglY&psig=AOvVaw0N5ne4rW18LupXruqT1FTD&ust=1731331200408000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJj4xLzt0YkDFQAAAAAdAAAAABAE",
+      "price": 0.1,
+      "id": 11
+    },
+    {
+      "name": "trivela ",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Flegionville.org%2F%3Fm%3Dbeginners-guide-to-indoor-plants-oo-pM4rOglY&psig=AOvVaw0N5ne4rW18LupXruqT1FTD&ust=1731331200408000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJj4xLzt0YkDFQAAAAAdAAAAABAE",
+      "price": 0.1,
+      "id": 12
+    },
+    {
+      "name": "trivela ",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Flegionville.org%2F%3Fm%3Dbeginners-guide-to-indoor-plants-oo-pM4rOglY&psig=AOvVaw0N5ne4rW18LupXruqT1FTD&ust=1731331200408000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJj4xLzt0YkDFQAAAAAdAAAAABAE",
+      "price": 0.1,
+      "id": 13
+    },
+    {
+      "name": "trivela ",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Flegionville.org%2F%3Fm%3Dbeginners-guide-to-indoor-plants-oo-pM4rOglY&psig=AOvVaw0N5ne4rW18LupXruqT1FTD&ust=1731331200408000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJj4xLzt0YkDFQAAAAAdAAAAABAE",
+      "price": 0.1,
+      "id": 14
+    },
+    {
+      "name": "trivela ",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Flegionville.org%2F%3Fm%3Dbeginners-guide-to-indoor-plants-oo-pM4rOglY&psig=AOvVaw0N5ne4rW18LupXruqT1FTD&ust=1731331200408000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJj4xLzt0YkDFQAAAAAdAAAAABAE",
+      "price": 0.1,
+      "id": 15
+    },
+    {
+      "name": "trivela ",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Flegionville.org%2F%3Fm%3Dbeginners-guide-to-indoor-plants-oo-pM4rOglY&psig=AOvVaw0mfiOC4-YnBW34yChSqy39&ust=1731327469925000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCMDX7cjf0YkDFQAAAAAdAAAAABAE",
+      "price": 0.02,
+      "id": 16
+    },
+    {
+      "name": "trivela ",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Flegionville.org%2F%3Fm%3Dbeginners-guide-to-indoor-plants-oo-pM4rOglY&psig=AOvVaw0mfiOC4-YnBW34yChSqy39&ust=1731327469925000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCMDX7cjf0YkDFQAAAAAdAAAAABAE",
+      "price": 0.02,
+      "id": 17
+    },
+    {
+      "name": "trivela ",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Flegionville.org%2F%3Fm%3Dbeginners-guide-to-indoor-plants-oo-pM4rOglY&psig=AOvVaw0mfiOC4-YnBW34yChSqy39&ust=1731327469925000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCMDX7cjf0YkDFQAAAAAdAAAAABAE",
+      "price": 0.02,
+      "id": 18
     }
   ]
 }

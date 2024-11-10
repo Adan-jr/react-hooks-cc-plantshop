@@ -1,16 +1,18 @@
 import React from "react";
+import Header from "./Header";
+import NewPlantForm from "./NewPlantForm";
+import PlantList from "./PlantList";
+import Search from "./Search";
 
-function Header() {
+function PlantPage() {
   return (
-    <header>
-      <h1>
-        Plantsy
-        <span className="logo" role="img">
-          🌱
-        </span>
-      </h1>
-    </header>
+    <main>
+      <Header />
+      <NewPlantForm />
+      <Search />
+      <PlantList />
+    </main>
   );
 }
 
-export default Header;
+export default PlantPage;
