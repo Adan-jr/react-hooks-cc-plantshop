@@ -14,7 +14,7 @@ function PlantCard({ plant, onDelete }) {
   };
 
   return (
-    <li className="card" data-testid="plant-item">
+    <li className="card" data-test id="plant-item">
       <img src={plant.image || "https://via.placeholder.com/400"} alt={plant.name} />
       <h4>{plant.name}</h4>
       <p>Price: ${plant.price.toFixed(2)}</p>

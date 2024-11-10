@@ -1,50 +1,54 @@
-# Phase 2 Code Challenge: Plantsy
+Plantsy - React Plant Store Admin
+Plantsy is a plant store admin dashboard where you can view, add, update, and manage plants. The app communicates with a backend server to persist data and allows for dynamic changes, such as marking plants as "sold out", updating their price, or deleting them.
 
-## Demo
+Demo
 
-Use this gif as an example of how the app should work.
 
-![Demo GIF](https://curriculum-content.s3.amazonaws.com/phase-2/react-hooks-mock-code-challenge-plantshop/plantsy_demo.gif)
+Core Features
+View all plants in the store.
+Add a new plant to the store.
+Mark a plant as "sold out".
+Search for plants by their name and see a filtered list of plants.
+Advanced Features (Optional)
+Update the price of a plant and see the changes reflected after page refresh.
+Delete a plant, and it will be removed permanently, even after a refresh.
+Setup
+Clone the repository:
 
-## Instructions
+bash
+Copy code
+git clone https://github.com/your-username/plantsy.git
+cd plantsy
+Install dependencies:
 
-Welcome to Plantsy! You've been tasked with building out some features for the
-admin side of a plant store. The designers have put together the components and
-CSS. Now it's up to you to bring the features to life by adding stateful logic
-as well as persisting data to the backend via our API.
+bash
+Copy code
+npm install
+Run the backend server:
 
-Your job will be to make our app work according to the user stories you will
-find the [Core Deliverables](#Core-Deliverables) section.
+bash
+Copy code
+npm run server
+The backend server will run on port 6001.
 
-## Setup
+In a new terminal, start the React development server:
 
-1. Run `npm install` in your terminal.
-2. Run `npm run server`. This will run your backend on port `6001`.
-3. In a new terminal, run `npm start`.
+bash
+Copy code
+npm start
+Your app will be available at http://localhost:3000.
 
-Make sure to open [http://localhost:6001/plants](http://localhost:6001/plants)
-in the browser to verify that your backend is working before you proceed!
+Verify that the backend is running correctly by visiting http://localhost:6001/plants in your browser.
 
-## Endpoints
+Features
+Core Deliverables
+1. Display all Plants
+When the app starts, all plants are fetched from the backend API and displayed on the page.
 
-The base URL for your backend is: `http://localhost:6001`
-
-## Core Deliverables
-
-As a user:
-
-1. When the app starts, I can see all plants.
-2. I can add a new plant to the page by submitting the form.
-3. I can mark a plant as "sold out".
-4. I can search for plants by their name and see a filtered list of plants.
-
-### Endpoints for Core Deliverables
-
-#### GET /plants
-
-Example Response:
-
-```json
+API Endpoint: GET /plants
+Response:
+json
+Copy code
 [
   {
     "id": 1,
@@ -59,92 +63,121 @@ Example Response:
     "price": 25.98
   }
 ]
-```
+2. Add a New Plant
+Users can add a new plant by filling out a form with the plant's name, image URL, and price. The plant is then added to the store and persisted in the backend.
 
-#### POST `/plants`
-
-Required Headers:
-
-```js
+API Endpoint: POST /plants
+Request Body:
+json
+Copy code
 {
-  "Content-Type": "application/json"
+  "name": "Aloe",
+  "image": "./images/aloe.jpg",
+  "price": 15.99
 }
-```
-
-Request Object:
-
-```json
-{
-  "name": "string",
-  "image": "string",
-  "price": number
-}
-```
-
-Example Response:
-
-```json
+Response:
+json
+Copy code
 {
   "id": 1,
   "name": "Aloe",
   "image": "./images/aloe.jpg",
   "price": 15.99
 }
-```
+3. Mark a Plant as Sold Out
+Users can toggle the availability of plants, marking them as "sold out". When toggled, the UI updates to show the status change.
 
-## Advanced Deliverables
+4. Search for Plants
+Users can filter the displayed plants by typing in the search bar. The plant list will update dynamically as the user types, showing only the plants that match the entered name.
 
-These deliverables are not required to pass the code challenge, but if you have
-the extra time, or even after the code challenge, they are a great way to
-stretch your skills.
+Advanced Deliverables
+1. Update Plant Price
+Users can update the price of a plant. The change will persist after a page refresh.
 
-You'll have to add additional elements for these features. Feel free to style
-them however you see fit!
-
-> Note: If you are going to attempt these advanced deliverables, please be sure
-> to have a working commit with all the Core Deliverables first!
-
-As a user:
-
-1. I can update the price of a plant and still see the updated price after
-   refreshing the page.
-2. I can delete a plant and it is still gone when I refresh the page.
-
-### Endpoints for Advanced Deliverables
-
-#### PATCH /plants/:id
-
-Required Headers:
-
-```js
+API Endpoint: PATCH /plants/:id
+Request Body:
+json
+Copy code
 {
-  "Content-Type": "application/json"
+  "price": 16.99
 }
-```
-
-Request Object:
-
-```json
-{
-  "price": number
-}
-```
-
-Example Response:
-
-```json
+Response:
+json
+Copy code
 {
   "id": 1,
   "name": "Aloe",
   "image": "./images/aloe.jpg",
   "price": 16.99
 }
-```
+2. Delete a Plant
+Users can delete a plant, and it will be removed from the UI and the backend database. The plant will no longer appear after the page is refreshed.
 
-#### DELETE /plants/:id
-
-Example Response:
-
-```json
+API Endpoint: DELETE /plants/:id
+Response:
+json
+Copy code
 {}
-```
+API Endpoints
+The following endpoints are used to manage plant data in the app:
+
+GET /plants: Fetch all plants
+POST /plants: Add a new plant
+PATCH /plants/:id: Update a plant's price
+DELETE /plants/:id: Delete a plant
+Installation
+Follow these steps to set up the project locally:
+
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/your-username/plantsy.git
+cd plantsy
+Install dependencies:
+
+bash
+Copy code
+npm install
+Run the backend server:
+
+bash
+Copy code
+npm run server
+The server will run on http://localhost:6001.
+
+Start the React app:
+
+bash
+Copy code
+npm start
+Open http://localhost:3000 to view the app.
+
+Project Structure
+The project structure is as follows:
+
+markdown
+Copy code
+/src
+  /components
+    - App.js
+    - PlantCard.js
+    - PlantList.js
+    - NewPlantForm.js
+    - Header.js
+    - Search.js
+  /styles
+    - index.css
+  /assets
+    - images/
+  - index.js
+Technologies Used
+React
+React Hooks (useState, useEffect)
+CSS for styling
+JSON for API responses
+Contributing
+Feel free to fork the repository, make improvements, or submit pull requests!
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
